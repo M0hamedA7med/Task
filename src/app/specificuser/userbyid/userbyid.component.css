@@ -1,0 +1,59 @@
+/* Style for the search container */
+.search-container {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center; /* Horizontally center the content */
+  align-items: center; /* Vertically center the content */
+}
+
+.search-container input[type="text"] {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-container button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-container button:hover {
+  background-color: #45a049;
+}
+
+/* Style for the user details container */
+.user-details-container {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  justify-content: center; /* Horizontally center the content */
+}
+
+.user-card {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.user-card h2 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.user-card p {
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.user-card img {
+  max-width: 100%;
+  border-radius: 5px;
+}

@@ -1,0 +1,85 @@
+.container {
+    display: flex;
+    justify-content: center;
+  
+    text-align: center;
+  }
+  body {
+  
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center center; 
+  }
+  
+  
+  table {
+    margin-top: 10px;
+    width: 90%; 
+    border-collapse: collapse;
+    border: 2px solid #100202; 
+    border-radius: 12px;
+    overflow: hidden;
+    color:black ;
+    background-color: white;
+    font-family: Arial, sans-serif; 
+    font-weight: bold;
+    font-size: 150px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color:#333 ; 
+    border-radius: 10px;
+   
+  }
+  
+  th, td {
+    color:black; 
+    padding: 15px;
+    font-weight: bold;
+    font-size: 150px;
+    text-align: left;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    border: 2px solid lightblue; 
+  }
+  
+  th {
+    background-color: #333;
+    color:wheat ;
+    font-weight: bold;
+    height: 70px; 
+    font-size: 18px; 
+    height: 100px;
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  td {
+    font-size: 16px; 
+    border: 2px solid lightblue;
+
+  }
+  
+  
+  .btn {
+    border-radius: 20px;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  
+  .btn-add-exam {
+    margin-bottom: 10px;
+    background-color: #80bdff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }

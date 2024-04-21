@@ -1,0 +1,20 @@
+<header>
+    <div class="logo">
+      <h1>My<span>Teacher</span></h1>
+    </div>
+    <div class="header">
+      <input type="text" [(ngModel)]="searchQuery" placeholder="Search for a user">
+      <button (click)="searchUser()">Search</button>
+    </div>
+    
+    <nav>
+      <ul>
+        <li><a routerLink="/" class="nav-link">Home</a></li>
+        <li><a routerLink="/about" class="nav-link">About</a></li>
+        <li><a routerLink="/contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+           
+  
