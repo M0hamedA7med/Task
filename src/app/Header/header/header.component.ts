@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { Router, RouterLink, RouterModule } from '@angular/router';
 import { UsersService } from '../../../Services/users.service';
 import { HttpClientModule } from '@angular/common/http';
+import { style } from '@angular/animations';
 
 @Component({
   selector: 'app-header',
@@ -16,20 +17,31 @@ import { HttpClientModule } from '@angular/common/http';
 export class HeaderComponent implements OnInit {
   searchQuery: string = '';
   user:any;
+  userNotFound: boolean = false; 
 
 
   constructor(private usersService: UsersService,private router: Router) {}
 
   ngOnInit(): void {}
-
+  
   searchUser() {
     this.usersService.getuserByID(this.searchQuery).subscribe({
       next: (data) => {
         this.user = data;
-        console.log(data);
+        if (this.searchQuery&& this.user.id) {
+
+          this.router.navigate(['/userid/'+this.searchQuery]);
+          setTimeout(() => {
+            window.location.reload();
+          }, 0.01);
+    
+          
+        } else {
+          this.userNotFound = true;
+        }
       },
       error: (err) => {
-        // Use this.router.navigate instead of router.navigate
+       
       
       }
     });

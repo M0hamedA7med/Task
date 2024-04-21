@@ -14,7 +14,11 @@ export class UsersService {
 getuserByID(id:any){
   return this.myClient.get(`${this.DB_URl}/${id}`);
 }
-AddNewGroup(Group:any){
-  return this.myClient.post(this.DB_URl,Group);
+ADdnewuser(user:any){
+  return this.myClient.post(this.DB_URl,user);
+}
+getLastUserId() {
+  return this.myClient.get<number[]>(this.DB_URl + '?_sort=id&_order=desc&_limit=1');
+  
 }
 }

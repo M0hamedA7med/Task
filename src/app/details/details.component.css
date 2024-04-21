@@ -1,0 +1,25 @@
+.about-me-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.profile {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+}
+
+.profile-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; 
+}
+
+.details {
+    text-align: left;
+}
+
+.details p {
+    margin: 10px 0;
+}

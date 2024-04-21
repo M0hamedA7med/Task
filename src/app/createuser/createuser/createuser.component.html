@@ -1,0 +1,18 @@
+<div class="add-user-container">
+    <h2>Add New User</h2>
+    <form (ngSubmit)="onSubmit()" #userForm="ngForm">
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" [(ngModel)]="newUser.email" required>
+      </div>
+      <div class="form-group">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" [(ngModel)]="newUser.firstName" required>
+      </div>
+      <div class="form-group">
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" [(ngModel)]="newUser.lastName" required>
+      </div>
+      <button type="submit" [disabled]="userForm.invalid">Add User</button>
+    </form>
+</div>

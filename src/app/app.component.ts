@@ -1,3 +1,5 @@
+import { DetailsComponent } from './details/details.component';
+import { CreateuserComponent } from './createuser/createuser/createuser.component';
 
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
@@ -9,7 +11,7 @@ import { UserbyidComponent } from './specificuser/userbyid/userbyid.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [UserbyidComponent,RouterOutlet,HeaderComponent,BodyComponent,UsersComponent],
+  imports: [DetailsComponent,CreateuserComponent,UserbyidComponent,RouterOutlet,HeaderComponent,BodyComponent,UsersComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

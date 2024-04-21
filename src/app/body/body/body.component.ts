@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { Router, RouterLink, RouterModule } from '@angular/router';
 
@@ -5,7 +6,7 @@ import { Router, RouterLink, RouterModule } from '@angular/router';
 @Component({
   selector: 'app-body',
   standalone: true,
-  imports: [RouterLink,RouterModule],
+  imports: [RouterLink,RouterModule,CommonModule],
   templateUrl: './body.component.html',
   styleUrl: './body.component.css'
 })
